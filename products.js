@@ -245,11 +245,37 @@ console.log(products)
 
 const categoryType="jewelery"
 
-const womenProducts=products.filter(
+const totalJewwlryCost=products.filter(
     (product)=>
     {
         return product.category===categoryType
     }
+).reduce((acc, prod) => acc + prod.price, 0);
+
+console.log(totalJewwlryCost)
+
+//console.log(womenProducts)
+
+
+const allCategories=products.map(
+    (product)=>
+    {
+        return product.category
+    }
 )
 
-console.log(womenProducts)
+console.log(allCategories)   //20
+const uniqueCategories=new Set(allCategories)
+console.log(uniqueCategories)//4
+
+
+const uniqueWithAll=[...uniqueCategories,"All"]
+console.log(uniqueWithAll)//5
+
+
+
+const cars=['Audi','BMW','Merc'];
+console.log(cars);
+const newCars=[...cars,"Tata"]
+console.log(newCars)
+
