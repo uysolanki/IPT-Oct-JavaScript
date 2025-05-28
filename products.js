@@ -242,3 +242,14 @@ const products=[
 ]
 
 console.log(products)
+
+const categoryType="jewelery"
+
+const womenProducts=products.filter(
+    (product)=>
+    {
+        return product.category===categoryType
+    }
+)
+
+console.log(womenProducts)
