@@ -12,3 +12,4 @@ console.log(student1['per-my']);
 
 for(let key in student1)
     console.log(key)
+
