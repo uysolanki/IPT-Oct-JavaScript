@@ -10,15 +10,34 @@
             background-color: green;
             color:red
         }
+        .subscribe-button{
+            background-color: rgb(182, 3, 3);
+            padding: 10px;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .unsubscribe-button{
+            background-color: lightpink;
+            padding: 10px;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    
     <p class="com">IT Preneur</p>
     <h1 class="com">Welcome</h1>
     <h1 class="com">To</h1>
     <h1 class="com">ITP</h1>
     <p id="para1">Full Stack Development</p>
+    <button class="subscribe-button" id="js-subscribe-button" onclick="toggleButtonText()">Subscribe</button>
     <script src="day8.js"></script>
 </body>
 </html>

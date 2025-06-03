@@ -22,3 +22,31 @@ Array.from(allComElements).forEach(
         element.style.color='blue'
     }
 )
+
+
+
+function toggleButtonText()
+{
+const subscribeButton=document.querySelector('#js-subscribe-button')
+console.log(subscribeButton)
+if(subscribeButton.innerHTML==='Subscribe')
+{
+    subscribeButton.innerHTML='UnSubscribed'
+    //subscribeButton.style.setProperty('background-color','lightpin')
+    subscribeButton.classList.add('unsubscribe-button')
+}
+else
+{
+     subscribeButton.innerHTML='Subscribe'
+    // subscribeButton.style.setProperty('background-color','rgb(182, 3, 3)')
+    subscribeButton.classList.remove('unsubscribe-button')
+}
+}
+
+
+function toggleButtonText1()
+{
+const subscribeButton=document.querySelector('#js-subscribe-button')
+console.log(subscribeButton)
+subscribeButton.innerHTML==='Apple'?subscribeButton.innerHTML='Mango':subscribeButton.innerHTML='Apple'
+}
