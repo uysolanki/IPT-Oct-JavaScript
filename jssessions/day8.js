@@ -50,3 +50,28 @@ const subscribeButton=document.querySelector('#js-subscribe-button')
 console.log(subscribeButton)
 subscribeButton.innerHTML==='Apple'?subscribeButton.innerHTML='Mango':subscribeButton.innerHTML='Apple'
 }
+
+
+const testButton=document.querySelector('#test-button')
+console.log(testButton)
+testButton.innerHTML="RCB IPL 2025 Champion"
+testButton.style.setProperty('background-color','red')
+//testButton.addEventListener('click',wish)
+//testButton.addEventListener('click',greet('Virat Kohli'))
+testButton.addEventListener('click',()=>greet('Shreyas Iyer'))
+
+
+function greet(playerName)
+{
+    setTimeout(
+        ()=>{
+            alert(`Congratulations ${playerName}`)
+        },5000
+    )
+    
+}
+
+function wish()
+{
+    alert('Congratulations BCCI')
+}
