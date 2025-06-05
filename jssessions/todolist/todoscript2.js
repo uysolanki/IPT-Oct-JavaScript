@@ -7,9 +7,8 @@ textElement.addEventListener('keypress',(event)=>{
 display()
 function addtolist() 
 {
-
-
 const textData=textElement.value;
+
 const paraElement=document.getElementById("p1")
 //console.log(textData)
 if(todoList.includes(textData))

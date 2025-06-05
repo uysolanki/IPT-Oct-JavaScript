@@ -8,7 +8,7 @@
     <style>
         #todo-row{
             display: grid;
-            grid-template-columns: 200px 100px;
+            grid-template-columns: 200px 100px 100px;
             align-items: center;
         }
 
@@ -22,16 +22,27 @@
             cursor: pointer;
             margin-top: 2px;
         }
+
+        .add-button{
+            background-color: green;
+            padding: 10px;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            margin-top: 2px;
+        }
     </style>
 </head>
     <h3>Todo List</h3>
      <p id="p1" style="display: none; color:red">data allready exist</p>
-    <input type="text" id="t1" /> 
-   
-    <button onclick="addtolist()">Add</button>
+    <input type="text" id="t1" required /> 
+    <input type="date" id="d1"  required/> 
+    <button onclick="addtolist()" class="add-button">Add</button>
 
     <div id="showtodo"></div>
 
-    <script src="todoscript2.js"></script>
+    <script src="todoscript3.js"></script>
 </body>
 </html>
