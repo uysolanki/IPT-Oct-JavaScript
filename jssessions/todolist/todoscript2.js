@@ -1,9 +1,14 @@
 let todoList=['apple','mango']
+const textElement=document.getElementById('t1')
+textElement.addEventListener('keypress',(event)=>{
+    if(event.key==='Enter')
+        addtolist()
+})
 display()
 function addtolist() 
 {
 
-const textElement=document.getElementById('t1')
+
 const textData=textElement.value;
 const paraElement=document.getElementById("p1")
 //console.log(textData)
@@ -47,7 +52,7 @@ deleteButtons.forEach(
             display()
         });
     });
-    
+
 }
 
 
