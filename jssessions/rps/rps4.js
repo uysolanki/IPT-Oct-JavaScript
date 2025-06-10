@@ -2,7 +2,11 @@
     let lose=0;
     let tie=0;
 
-    let score={win,lose,tie}
+let score = JSON.parse(localStorage.getItem('score1')) || {
+  win: 0,
+  lose: 0,
+  tie: 0
+};
 
     const rockButton=document.querySelector('#rock-button')
     rockButton.addEventListener('click',()=>{playGame('Rock')})
@@ -74,7 +78,7 @@ function playGame(playerMove)
         case "Lose":score.lose++; break;
         case "Tie":score.tie++; break;
     }
-
+    localStorage.setItem('score1', JSON.stringify(score));
     displayOutput(playerMove,computerMove,result)
 }
 
@@ -94,7 +98,8 @@ function generateComputeMove()
 
 function resetScore()
 {
-score={win:0,lose:0,tie:0}
+localStorage.removeItem('score1')
+//score = { win: 0, lose: 0, tie: 0 };
 }
 
 function displayOutput(playerMove,computerMove,result)
@@ -111,4 +116,29 @@ function displayOutput(playerMove,computerMove,result)
     const displayScoreParagraph=document.querySelector('#score')
     displayScoreParagraph.innerHTML=`Score : Wins ${score.win} : Tie ${score.tie} : Loss ${score.lose}`
    // console.log(`Score : Wins ${win} : Tie ${tie} : Loss ${lose}`)
+}
+let autoplayFlag=false
+let intervalId;
+let autoplayButton=document.getElementById('autoplay-button')
+
+function autoplay()
+{
+    
+    if(autoplayFlag===false)                                        //true
+    {
+    intervalId=setInterval(()=>{   
+    console.log(intervalId)                                 //interval ID=111               autoPlay=false
+    let computerChoosesUserMove=generateComputeMove()
+    playGame(computerChoosesUserMove)
+    autoplayFlag=true;
+    autoplayButton.style.setProperty('background-color','red')
+    },1000)
+    }
+    else
+    {
+    clearInterval(intervalId)
+    autoplayFlag=false  
+    autoplayButton.style.setProperty('background-color','green')
+    }
+
 }
