@@ -2,6 +2,8 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
+
+    let menus=[]
   return (
     <div>
         <ul>
