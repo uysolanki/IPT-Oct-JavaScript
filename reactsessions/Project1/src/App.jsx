@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from './components/navbar'
-import Navbar1 from './components/Navbar1';
+import Counter from './components/Counter';
 
 const App = () => {
 
@@ -20,11 +19,8 @@ const App = () => {
 
                   //South Hemisphere  html code
                   //{Java Script expression}  
-  <div>
-      <Navbar/>
-      <Navbar/>
-      <span>{sum}</span>
-      <Navbar1/>
+  <div id='root1'>
+      <Counter/>
   </div>
   )
 }
