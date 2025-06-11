@@ -1,5 +1,5 @@
 import React from 'react'
-import Counter from './components/Counter';
+import Counter1 from './components/Counter1';
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
                   //South Hemisphere  html code
                   //{Java Script expression}  
   <div id='root1'>
-      <Counter/>
+      <Counter1/>
   </div>
   )
 }
