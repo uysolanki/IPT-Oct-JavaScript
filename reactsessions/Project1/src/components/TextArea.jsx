@@ -1,10 +1,11 @@
 import React from 'react'
 import './TextArea.css'
 import { useState } from 'react'
+import Button from './Button'
 const TextArea = () => {
 
-     const [text,setText]=useState()
-     const [previewtext,setPreviewtext]=useState()
+     const [text,setText]=useState("")
+     const [previewtext,setPreviewtext]=useState("")
      function handleOnchangeIntextArea(event)
      {
             setText(event.target.value)
@@ -34,6 +35,8 @@ const TextArea = () => {
             <div id="button-container">
                 <button onClick={handleUpperCase}>UpperCase</button>
                 <button onClick={handleLowerCase}>LowerCase</button>
+                <Button text="UpperCase" handleClick={handleUpperCase} />
+                <Button text="LowerCase" handleClick={handleLowerCase} />
             </div>
 
 
