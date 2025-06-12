@@ -1,5 +1,6 @@
 import React from 'react'
 import Counter1 from './components/Counter1';
+import TextArea from './components/TextArea';
 
 const App = () => {
 
@@ -20,7 +21,7 @@ const App = () => {
                   //South Hemisphere  html code
                   //{Java Script expression}  
   <div id='root1'>
-      <Counter1/>
+      <TextArea/>
   </div>
   )
 }

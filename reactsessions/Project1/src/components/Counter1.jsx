@@ -34,6 +34,7 @@ const Counter1 = () => {
 
   return  (
     <>
+        <h3>Counter Functions</h3>
         <Button text="IncrementITP" handleClick={handleIncrement} color="red"/>
         <Button text="DecrementITP" handleClick={handleDecrement} color="blue"/>
         <Button text="Increment By 2ITP" handleClick={handleIncrementBy2} color="green"/>

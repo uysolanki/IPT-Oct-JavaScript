@@ -8,8 +8,5 @@ const Button = ({text,handleClick,color = 'lightpink'}) => {
   )
 }
 
-Button.defaultProps = {
-    color: 'lightpink'
-    };
 
 export default Button
