@@ -1,0 +1,21 @@
+.subscribe-button
+{
+background-color: red;
+color: white;
+border: none;
+border-radius: 5px;
+padding:10px;
+font-size: 24px;
+cursor: pointer;
+}
+
+.unsubscribe-button
+{
+background-color: green;
+color: white;
+border: none;
+border-radius: 5px;
+padding:10px;
+font-size: 24px;
+cursor: pointer;    
+}

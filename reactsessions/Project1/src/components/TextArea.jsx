@@ -11,7 +11,6 @@ const TextArea = () => {
             setText(event.target.value)
             setPreviewtext(event.target.value)
      }
-
      function handleUpperCase()
      {
         setPreviewtext(previewtext.toUpperCase())
